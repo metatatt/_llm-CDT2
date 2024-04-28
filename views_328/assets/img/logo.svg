@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="170" height="50" viewBox="0 0 170 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <text style="white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 28px;" transform="matrix(0.133171, 0, 0, 0.13317, 58.466406, 18.780535)"> </text>
+  <text style="fill: rgb(19, 126, 217); font-family: Arial, sans-serif; font-size: 135.166px; line-height: 216.265px; paint-order: stroke; white-space: pre;" transform="matrix(0.147075, 0, 0, 0.15593, 55.0885, 33.982162)">画时钟</text>
+  <g transform="matrix(0.052083, 0, 0, 0.052083, 8.470147, 3.555008)" style="">
+    <g transform="matrix(0.313491, 0.949591, -0.949592, 0.313491, -0.000035, -252.359997)" fill="#1c8adb" shape-rendering="auto" style="transform-origin: 400px 652.36px;">
+      <path d="m399.98 252.36a400.01 399.99 0 0 0 -399.98 400 400.01 399.99 0 0 0 399.98 400 400.01 399.99 0 0 0 400.02 -400 400.01 399.99 0 0 0 -400.02 -400zm0 33.191a366.84 366.82 0 0 1 366.85 366.81 366.84 366.82 0 0 1 -366.85 366.81 366.84 366.82 0 0 1 -366.82 -366.81 366.84 366.82 0 0 1 366.82 -366.81z" color="#000000" color-rendering="auto" image-rendering="auto" solid-color="#000000" style="isolation:auto;mix-blend-mode:normal"/>
+      <path transform="translate(0 252.36)" d="m384.2 88.998v264.17a50 50 0 0 0 -34.197 47.371 50 50 0 0 0 0.96094 9.5449l-137.64 79.465 15.803 27.369 137.39-79.322a50 50 0 0 0 33.482 12.943 50 50 0 0 0 50 -50 50 50 0 0 0 -34.197 -47.393v-264.15h-31.605z" color="#000000" color-rendering="auto" image-rendering="auto" solid-color="#000000" style="isolation:auto;mix-blend-mode:normal"/>
+    </g>
+  </g>
+</svg>

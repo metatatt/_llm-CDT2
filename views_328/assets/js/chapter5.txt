@@ -1,0 +1,3 @@
+   <div class="py-16 bg-blue-100" style="display: none;">
+
+    </div>

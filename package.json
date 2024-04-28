@@ -1,0 +1,29 @@
+{
+  "name": "CDT classification - ResNet+ GPT4V",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "CDT",
+    "Dementia PsychNeuron Inventory",
+    "GPT-4",
+    "ResNet",
+    "vision"
+  ],
+  "author": "Hsien",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.8",
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.3.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-fileupload": "^1.4.3",
+    "multer": "^1.4.5-lts.1",
+    "openai": "^4.0.0"
+  }
+}

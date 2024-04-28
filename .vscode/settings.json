@@ -1,0 +1,5 @@
+{
+    "appService.showBuildDuringDeployPrompt": false,
+    "appService.defaultWebAppToDeploy": "/subscriptions/84e6e760-923e-431a-95ff-c43e1621a1d9/resourceGroups/2024-resource/providers/Microsoft.Web/sites/llm-cam0328",
+    "appService.deploySubpath": "."
+}

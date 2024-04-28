@@ -1,0 +1,30 @@
+<!-- 记忆测试-文字提示 -->
+<div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/3">
+  <div class="m-4 wow fadeInRight" data-wow-delay="2.5s">
+    <div class="icon text-5xl">
+      <i class="lni lni-layers"></i>
+    </div>
+    <div>
+      <h3 class="service-title">第一步：记住这三个物品</h3>
+      <p class="text-gray-600">我现在要语音提示三个物品，我会念两次，请记住它们。<br><br></p>
+    </div>
+  </div>
+</div>
+
+<!-- 语音提示 -->
+          <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/3">
+                    <div class="m-4 wow fadeInRight" data-wow-delay="3.5s">
+                      <div class="icon text-5xl">
+                      </div>
+                      <div>
+                        <p class="text-gray-600">你准备好了吗？<br><br></p>
+                      </div>
+                      <div class="flex justify-center">
+                          <button type="button" onclick="instructAudio(1)" class="btn btn-primary" data-wow-delay="3.5s">😃 准备好了 😃</button>
+                          <audio id="speech1" class="audioControl" controls hidden data-visual="speech1_visual"></audio>
+                      </div>
+                      <div id="speech1_visual" class="audioVisual flex justify-center" style="display: none;">
+                          <img src="./assets/img/soundVisual.gif" alt="Sound Visualization">
+                      </div>
+                    </div>
+          </div>

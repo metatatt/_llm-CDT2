@@ -1,0 +1,21 @@
+
+         <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/3"  style="display: block;">
+          <div class="m-4 wow fadeInRight" data-wow-delay="8.5s">
+            <div class="icon text-5xl">
+            </div>
+            <form id="apiForm">
+              <div class="mb-3">
+                  <label for="image" class="form-label">- 打开摄像头 -</label>
+                  <input type="file" id="image" name="image" class="form-control" required accept="image/*" onchange="previewImage(this);">
+                  <img id="imagePreview" src="#" alt="Image Preview" class="mt-2 img-thumbnail" style="display: none;">
+              </div>
+          </form>
+          </div>
+        </div>
+
+        <div id='evalPrompt' style="display: none;">
+          <div class="m-4 wow fadeInRight flex justify-center" data-wow-delay="1.5s">
+
+<button id="sendImgBtn" onclick="callAPI(); updateState(1);" class="btn btn-primary">😃 开始评估 😃</button>
+          </div>
+        </div>

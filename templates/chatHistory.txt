@@ -1,0 +1,65 @@
+
+[
+  {
+    "user": "以下图属于Score 6:",
+     "images": [
+      "image_filePath6a.jpg",  // Replace with the actual base64 encoded crop images
+      "image_filePath6b.jpg",
+      "image_filePath6c.jpg"
+    ]
+  },
+  {
+    "user": "以下图属于Score 5:",
+     "images": [
+      "image_filePath5a.jpg",  // Replace with the actual base64 encoded crop images
+      "image_filePath5b.jpg",
+      "image_filePath5c.jpg"
+    ]
+  },
+  {
+    "user": "以下图属于Score 4:",
+     "images": [
+      "image_filePath4a.jpg",  // Replace with the actual base64 encoded crop images
+      "image_filePath4b.jpg",
+      "image_filePath4c.jpg"
+    ]
+  },
+   {
+    "user": "以下图属于Score 3:",
+     "images": [
+      "image_filePath3a.jpg",  // Replace with the actual base64 encoded crop images
+      "image_filePath3b.jpg",
+      "image_filePath3c.jpg"
+    ]
+  },
+  {
+    "user": "以下图属于Score 2:",
+     "images": [
+      "image_filePath2a.jpg",  // Replace with the actual base64 encoded crop images
+      "image_filePath2b.jpg",
+      "image_filePath2c.jpg"
+    ]
+  },
+   {
+    "user": "以下图属于Score 1:",
+     "images": [
+      "image_filePath1a.jpg",  // Replace with the actual base64 encoded crop images
+      "image_filePath1b.jpg",
+      "image_filePath1c.jpg"
+    ]
+  },
+  {
+    "user": "## 各组 Score 的特征 (更新版):\n\n**Score 1:**\n\n* 只有数字，没有表盘和指针。\n* 体现了对数字的认知，但尚未理解钟表的功能和表示方法。\n\n**Score 2:**\n\n* 有大致的圆形表盘，并填写了部分数字。\n* 可能没有指针，或者指针不完整。\n* 体现了对钟表结构的初步理解，但尚未掌握完整绘制和表示时间的能力。\n\n**Score 3:**\n\n* 有完整的表盘，数字填写基本正确，但可能位置有些偏差或不够清晰。\n* 没有指针，无法判断时间。\n* 体现了对钟表结构和数字位置的理解，但尚未掌握指针的使用。\n\n**Score 4:**\n\n* 有完整的表盘，数字填写正确，并且有时针和分针。\n* **时针和分针未正确指向目标时间 (例如 11 点 10 分)。**\n* 体现了对钟表结构和指针的理解，但尚未掌握如何准确指示时间。\n\n**Score 5:**\n\n* 有完整的表盘，数字填写正确，并且有时针和分针。\n* **时针和分针正确地指向目标时间 (例如 11 点 10 分)。**\n* 体现了对钟表结构、数字位置和指针使用的理解，但可能在精细度上略有欠缺 (例如指针的长度或角度可能不够精确)。\n\n**Score 6:**\n\n* 有完整的表盘，数字填写正确，并且有时针和分针。\n* 时针和分针都指向正确的位置，与数字指示的时间完全一致。\n* 体现了对钟表结构、数字位置和指针使用的完全理解，并能准确表示时间。"
+  },
+  {
+    "assistant": "非常感谢你的提示，我会记住个组的特征。" 
+  },
+
+   {
+    "user": "这张图比较接近6组中的那一组？请描述你的判断依据。",
+     "images": "testDemo.jpg"
+  }
+  {
+    "assistant": "## 组别：Score 2\n\n**判断依据:**图中出现表盘，表盘上的数字填写基本正确，但位置偏差。\n* 另外，图中没有指针，无法判断时间。" 
+  }
+]

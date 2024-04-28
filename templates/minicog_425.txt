@@ -1,0 +1,30 @@
+**Scoring Criteria for Clock Drawing Test** (v.425)
+
+**Full Score (2 points):**
+- All twelve numbers are present in the correct sequence.
+- The numbers 12, 3, 6, and 9 are in the correct anchor positions.
+- There are no missing or duplicate numbers.
+- Both hands are present and pointing exactly to the 11 and 2 (11:10).
+- Hand length is not considered for scoring.
+
+**Partial Score (1 point):**
+- All twelve numbers are present and in the correct sequence.
+- Minor inaccuracies in the placement of numbers, but 12, 3, 6, and 9 are recognizably in their general quadrant.
+- Both hands are present, even if not pointing exactly to the 11 and 2.
+- There are no missing or duplicate numbers, although they may not be perfectly aligned.
+
+**Low Score (0.5 points):**
+- One or two numbers are slightly out of sequence or misplaced, but the overall clock face is recognizable.
+- One of the hands is pointing to one of the required numbers (11 or 2), or both hands are present but not accurately pointing to the required numbers.
+- Slight duplication of numbers or one number missing.
+
+**No Score (0 points):**
+- Inability or refusal to draw a clock face.
+- Multiple numbers are missing, severely out of sequence, or duplicated.
+- The placement of numbers does not resemble a clock face's number sequence.
+- Clock hands are missing, or it is impossible to discern a time from their placement.
+
+**Notes:**
+- The test should be interpreted flexibly to allow for minor deviations that do not interfere with the function of the clock as a time-telling device.
+- A clock drawing that meets the criteria for multiple categories should be given the score for the highest category it qualifies for.
+- When the drawing is open to interpretation, the scorer should exercise judgment to determine the score, leaning towards a conservative assessment to prevent erroneously overlooking potential inaccuracies.

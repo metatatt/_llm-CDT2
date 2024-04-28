@@ -1,0 +1,14 @@
+What is the score of this image according to Scoring Guidline?
+
+** Scoring Guidline **
+
+add 5 points, if all digits are elibile and recongizable present as in a clock face;
+add 5 points, if Hour hand is present;
+add 1 point, if all of the non-anchor digits are in the correct eighth of the clock countour;
+minus 3 points, when crossed-out digits present;
+minus 1 point, if two hands not present;
+minus 1 point, for Minute hand not pointing to or near digit 2 
+
+
+
+
