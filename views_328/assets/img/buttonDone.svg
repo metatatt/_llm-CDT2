@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 500 170" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="d">
+      <circle cx="400" cy="400" r="400" fill="none"/>
+    </clipPath>
+    <linearGradient id="c" x1="470.16" x2="167.15" y1="348.16" y2="651.16" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0.775215, 0.055138, 0.012867, 1.001054, 62.416343, -25.890213)">
+      <stop offset="0"/>
+      <stop stop-opacity="0" offset="1"/>
+    </linearGradient>
+  </defs>
+  <g transform="matrix(0.174896, 0, 0, 0.174086, 19.397804, 17.482261)" style="">
+    <defs/>
+    <circle cx="400" cy="400" r="400" fill="#bedef5"/>
+    <g clip-path="url(#d)" transform="matrix(1.362232, 0, 0, 1, -150.905439, 74.504958)" style="">
+      <path d="M 440.56 345.173 L 386.951 411.691 L 255.36 304.391 L 89.029 533.171 C 134.287 650.106 198.936 729.915 282.377 773.604 L 507.503 517.711 L 450.882 512.081 L 320.626 307.21 C 331.855 267.044 447.317 400.26 440.561 345.184 L 440.56 345.173 Z" fill="url(#c)" opacity=".42" style="transform-origin: 268.312px 493.02px;"/>
+    </g>
+  </g>
+  <text style="fill: rgb(190, 222, 245); font-family: Arial, sans-serif; font-size: 28px; font-weight: 700; white-space: pre;" transform="matrix(2.158163, 0, 0, 2.437498, -360.739191, -185.92442)"><animate attributeName="opacity" from="1" to="0" dur="1s" repeatCount="indefinite"/><tspan x="220.133" y="96.238" dy="1em">​</tspan><tspan>    完成</tspan><tspan x="220.133" dy="1em">​</tspan><tspan>    <animate attributeName="opacity" from="1" to="0" dur="1s" repeatCount="indefinite"/></tspan><tspan x="220.133" dy="1em">​</tspan><tspan>  <animate attributeName="opacity" from="1" to="0" dur="1s" repeatCount="indefinite"/></tspan></text>
+  <g transform="matrix(0.905623, 0, 0, 0.870756, 50.698505, 35.13364)" style="">
+    <defs/>
+    <g fill="#2570c3">
+      <path d="m92.115 56.539c0.216-1.638 3.234-4.062 3.332-5.712 0.175-3-3.879-8.87-6.664-9.997-4.422-1.789-26.896-0.952-26.896-0.952-2.196-3.84 3.914-13.321 5.594-17.415 2.467-5.999 2.051-13.959-1.069-18.048-3.81-4.996-10.805-5.329-10.949-3.093-1.042 16.214-4.146 20.712-8.302 23.918-2.496 1.926-4.679 3.611-5.83 6.546-7.083 18.038-12.332 22.214-15.332 22.214h-2v40.999l20.995 3.905s26.065 2.467 34.272 0c2.582-0.774 7.039-4.652 8.092-7.141 0.602-1.428-0.233-4.809 0.478-6.188 1.049-2.043 5.479-4.602 5.475-7.378-0.003998-1.979-2.311-5.405-2.143-7.379 0.167-1.976 4.288-4.685 4.284-6.664-0.009003-2.076-3.61-5.555-3.337-7.615z" style="fill: rgb(255, 255, 255);"/>
+      <path d="m20 93.999c0 2.209-1.791 4-4 4h-12c-2.209 0-4-1.791-4-4v-37.999c0-2.209 1.791-4 4-4h12c2.209 0 4 1.791 4 4v37.999z" style="fill: rgb(255, 255, 255);"/>
+    </g>
+  </g>
+</svg>

@@ -203,7 +203,121 @@ function setupAudioVisuals() {
 function setupClickListeners() {
     document.addEventListener('click', function(event) {
         if (event.target.tagName === 'BUTTON') {
-            event.target.style.display = 'none';
+           // event.target.style.display = 'none';
         }
     });
+}
+
+
+document.getElementById('talkButton').addEventListener('pointerdown', startRecording);
+document.getElementById('talkButton').addEventListener('pointerup', stopRecording);
+document.getElementById('talkButton').addEventListener('pointerleave', stopRecording); // Optional: stops recording if the pointer leaves the button
+
+var recognition = new webkitSpeechRecognition();
+recognition.lang = 'en-US';
+recognition.interimResults = false;
+recognition.maxAlternatives = 1;
+
+function startRecording(event) {
+    // Prevents mouse events from firing if the event is from a touch input
+    if (event.pointerType === 'touch') {
+        event.preventDefault();
+    }
+    recognition.start();
+    console.log("Recording started");
+}
+
+function stopRecording(event) {
+    if (event.pointerType === 'touch') {
+        event.preventDefault();
+    }
+    recognition.stop();
+    console.log("Recording stopped");
+}
+
+recognition.onresult = function(event) {
+    var speechResult = event.results[0][0].transcript;
+    console.log('Recognized speech:', speechResult);
+    processSpeech(speechResult);
+};
+
+function processSpeech(inputText) {
+    fetch('/generateResponse', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({text: inputText}),
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log('Generated response:', data.reply);
+        speak(data.reply);
+    });
+}
+
+function speak(text) {
+    var utterance = new SpeechSynthesisUtterance(text);
+    speechSynthesis.speak(utterance);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const voiceCommand = new VoiceCommand();
+
+    const talkButton = document.getElementById('talkButton');
+    talkButton.addEventListener('pointerdown', (event) => {
+        if (event.pointerType === 'mouse' || event.pointerType === 'touch') {
+            voiceCommand.start();  // Start recognition when button is held
+            console.log("Recognition started");
+        }
+    });
+
+    talkButton.addEventListener('pointerup', () => {
+        voiceCommand.recognition.stop();  // Stop recognition when button is released
+        console.log("Recognition stopped");
+    });
+});
+
+export class VoiceCommand {
+    constructor() {
+        this.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+        this.SpeechGrammarList = window.SpeechGrammarList || window.webkitSpeechGrammarList;
+        this.phrases = ['check', 'check again'];
+        this.recognition = new this.SpeechRecognition();
+        this.setupRecognition();
+    }
+
+    setupRecognition() {
+        if (this.SpeechGrammarList) {
+            const speechRecognitionList = new this.SpeechGrammarList();
+            const grammar = '#JSGF V1.0; grammar phrases; public <phrase> = ' + this.phrases.join(' | ') + ' </phrase>;';
+            speechRecognitionList.addFromString(grammar, 1);
+            this.recognition.grammars = speechRecognitionList;
+        }
+        this.recognition.continuous = true;
+        this.recognition.lang = 'en-US';
+        this.recognition.interimResults = false;
+        this.recognition.maxAlternatives = 1;
+        this.recognition.onresult = this.handleResults.bind(this);
+        this.recognition.onnomatch = () => console.log("I didn't recognize that command.");
+        this.recognition.onerror = (event) => console.log('Error occurred in recognition: ', event.error);
+        this.recognition.onend = () => {
+            console.log("SessionEnd restarting: ");
+            this.start();  // Automatically restart recognition
+        };
+    }
+
+    handleResults(event) {
+        let phrase = event.results[event.results.length - 1][0].transcript;
+        console.log('listen->', phrase);
+        if (phrase.includes('check')) {
+            const voiceEvent = new Event('voiceCommandCheck');
+            window.dispatchEvent(voiceEvent);
+        }
+        console.log('Confidence-> ' + event.results[event.results.length - 1][0].confidence);
+    }
+
+    start() {
+        this.recognition.start();
+    }
 }

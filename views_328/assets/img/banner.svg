@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<svg width="170" height="50" viewBox="0 0 170 50" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg viewBox="0 0 500 220" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs>
     <linearGradient id="c" x1="-2510.8" x2="-2370.8" y1="1034.3" y2="1301.1" gradientUnits="userSpaceOnUse">
       <stop stop-color="#541515" offset="0"/>
@@ -13,15 +13,12 @@
     <linearGradient id="e" x1="203.43" x2="346.3" gradientTransform="matrix(.089156 .27251 .094308 -.043275 -19.815 320.77)" gradientUnits="userSpaceOnUse" xlink:href="#a"/>
     <linearGradient id="d" x1="203.43" x2="346.3" gradientTransform="matrix(-.06376 .27954 .10313 .011415 101.37 295.18)" gradientUnits="userSpaceOnUse" xlink:href="#a"/>
   </defs>
-  <text style="white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 28px;" transform="matrix(0.133171, 0, 0, 0.13317, 58.466406, 18.780535)"> </text>
-  <text style="white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 28px;" transform="matrix(0.133171, 0, 0, 0.13317, 59.000049, 18.826564)"> </text>
-  <text style="fill: rgb(19, 126, 217); font-family: Arial, sans-serif; font-size: 96.197px; line-height: 216.265px; paint-order: stroke; white-space: pre;" transform="matrix(0.190677, 0, 0, 0.197937, 52.932693, 22.696018)"><tspan>迷你</tspan><tspan x="0" dy="1em">​</tspan><tspan>认知功能测试</tspan></text>
-  <g transform="matrix(0.077926, 0, 0, 0.077926, 1.445377, 6.717399)" style="opacity: 0.7;">
+  <g transform="matrix(0.283545, 0, 0, 0.303557, 317.998622, 24.213338)" style="">
     <g transform="translate(-4.5281 -196.73)">
       <path d="m242.32 207.21h289.49c32.455 0 58.987 22.678 58.987 50.417v305.74c0 27.942-26.532 50.62-58.987 50.62h-289.49c-32.455 0-59.224-22.678-59.224-50.62v-305.74c0-27.74 26.769-50.417 59.224-50.417z" fill="#fc0" stroke="#1f1a17" stroke-width="20.963"/>
-      <path d="m-1937.9 917.09c51.749 292.15-100.09 580.62-338.93 643.92s-474.68-122.43-526.42-414.58c-1.2465-7.0374-2.2086-13.013-3.2367-20.103l435.91-94.569 432.68-114.67z" fill="url(#c)" stroke="#00f" stroke-linecap="round" stroke-linejoin="round" stroke-width=".4" transform="matrix(.24515 .037281 -.024755 .16278 992.59 336.62)"/>
-      <path d="m-690.73 1516.7c26.393 121.81-51.049 242.1-172.86 268.49s-242.1-51.049-268.49-172.86c-6.8949-31.822-7.1264-60.074-0.7538-92.005" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="100.01" transform="matrix(.23581 0 0 -.23581 517.37 727.67)"/>
-      <path d="m-690.73 1516.7c26.393 121.81-51.049 242.1-172.86 268.49s-242.1-51.049-268.49-172.86c-6.8949-31.822-7.1264-60.074-0.7538-92.005" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="100.01" transform="matrix(.23581 0 0 -.23581 688.8 731.97)"/>
+      <path transform="matrix(.24515 .037281 -.024755 .16278 992.59 336.62)" d="m-1937.9 917.09c51.749 292.15-100.09 580.62-338.93 643.92s-474.68-122.43-526.42-414.58c-1.2465-7.0374-2.2086-13.013-3.2367-20.103l435.91-94.569 432.68-114.67z" fill="url(#c)" stroke="#00f" stroke-linecap="round" stroke-linejoin="round" stroke-width=".4"/>
+      <path transform="matrix(.23581 0 0 -.23581 517.37 727.67)" d="m-690.73 1516.7c26.393 121.81-51.049 242.1-172.86 268.49s-242.1-51.049-268.49-172.86c-6.8949-31.822-7.1264-60.074-0.7538-92.005" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="100.01"/>
+      <path transform="matrix(.23581 0 0 -.23581 688.8 731.97)" d="m-690.73 1516.7c26.393 121.81-51.049 242.1-172.86 268.49s-242.1-51.049-268.49-172.86c-6.8949-31.822-7.1264-60.074-0.7538-92.005" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="100.01"/>
       <path d="m320.6 221.1c11.373 0-7.4765 3.477-7.4765 7.2526-117.9-13.263-88.901 41.869-102.01 77.397-11.373 0-12.711-32.37-12.711-36.173 6.6302-65.869 73.187-44.382 122.2-48.476z" fill="url(#b)"/>
       <g transform="matrix(1.1914 -.42159 .42352 1.1969 -166.03 -33.945)">
         <path d="m160.65 456.41c0.46054 18.616 4.2584 40.267-2.0664 56.085-4.2368 10.596-18.202 19.758-29.618 23.154-15.846 4.7143-35.412 4.2762-52.163 1.3701-11.506-1.9961-23.425-6.7562-32.386-15.908-8.5125-8.6941-13.692-19.641-15.268-31.581-1.3612-10.309-3.7562-23.385 8.2532-27.159 11.601-8.5375 22.367-19.242 36.289-23.802 23.261-5.9124 46.792 1.8195 69.813 4.6901 6.9252 0.86356 16.955 5.407 17.147 13.152z" fill="#fc0" fill-rule="evenodd" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>
@@ -33,4 +30,5 @@
       </g>
     </g>
   </g>
+  <text style="fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 66px; white-space: pre;" x="26.278" y="111.639" transform="matrix(0.899776, 0, 0, 0.874868, -8.59485, -80.290206)"><tspan x="26.277999877929688" dy="1em">​</tspan>脑健康行动<tspan x="26.277999877929688" dy="1em">​</tspan>2024 北京</text>
 </svg>
