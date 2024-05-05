@@ -86,27 +86,28 @@ app.post('/api_session2', async (req, res) => {
 
 
     try {
-        const memoryObjects = JSON.parse(fs.readFileSync(memoryTestObjects, 'utf8'));
+        const fileContent = await fsPromises.readFile(memoryTestObjects, 'utf8');
+        const memoryObjects = JSON.parse(fileContent);
         const tools = memoryObjects.tools[Math.floor(Math.random() * memoryObjects.tools.length)];
         const nature = memoryObjects.nature[Math.floor(Math.random() * memoryObjects.nature.length)];
         const lands = memoryObjects.lands[Math.floor(Math.random() * memoryObjects.lands.length)];
         const speechText = `请记住这三个物品，等下我会请你回答它们是什么：${tools}, ${nature}, ${lands}。再说一次，${tools}, ${nature}, ${lands}，请记住了。`;
 
         // Check if the file exists; if not, generate it
-        if (!fs.existsSync(speechFile)) {
-            console.log(`Generating audio for:`, speechText);
-
+        try {
+            await fsPromises.access(speechFile);
+            console.log('File exists, serving existing file.');
+        } catch {
+            console.log(`Generating audio for: ${speechText}`);
             const mp3 = await openai.audio.speech.create({
                 model: "tts-1",
                 voice: "alloy",
                 input: speechText,
             });
-
             const buffer = Buffer.from(await mp3.arrayBuffer());
-            await fs.promises.writeFile(speechFile, buffer);
+            await fsPromises.writeFile(speechFile, buffer);
             console.log('Audio generated and saved successfully!');
         }
-
         // Send the URL back to the client
         
         res.send({ message: "Audio served/generated successfully!", url: `/assets/mp3/${filename}` });
@@ -116,33 +117,6 @@ app.post('/api_session2', async (req, res) => {
     }
 });
 
-app.post('/api_sessionX', async (req, res) => {
-    const num = req.body.request;
-    const speechText = await getTemplate(`speech${num}`);
-    console.log(`Generating unique audio for speech${num}:`, speechText);
-
-    const mp3 = await openai.audio.speech.create({
-        model: "tts-1",
-        voice: "alloy",
-        input: speechText,
-    });
-
-    const buffer = Buffer.from(await mp3.arrayBuffer());
-    const timestamp = Date.now();
-    const filename = `speech${num}-${timestamp}.mp3`;
-    const speechFile = `views_328/assets/mp3/${filename}`;
-
-    try {
-        await fs.promises.writeFile(speechFile, buffer);
-        console.log('Unique audio generated and saved successfully!');
-    } catch (error) {
-        console.error('Failed to write audio file:', error);
-        return res.status(500).send({ message: "Failed to generate audio." });
-    }
-
-    // Send the URL back to the client
-    res.send({ message: "Unique audio served/generated successfully!", url: `assets/mp3/${filename}` });
-});
 
 app.post('/api', upload.single('image'), async (req, res) => {
 
