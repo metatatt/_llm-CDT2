@@ -13,10 +13,10 @@ function setupSession() {
     <div class="w-full">
         <div class="m-4 wow fadeInRight" data-wow-delay="3.5s">
             <div class="flex items-center justify-between">
-                <p class="text-gray-600 mb-0">点击收听（第1/2次）:</p>
+                <p class="playCount text-gray-600 mb-0">点击收听（第1/2次）:</p>
                     <button id="listenButton" class="loadNext btn ml-2" data-wow-delay="3.5s">
                         <img src="assets/img/favicon.png" alt="Next">
-                    </button>
+                </button>
             </div>
             <div class="flex justify-center">
                 <audio id="audio_session2" class="audioControl" controls hidden></audio>
@@ -37,14 +37,15 @@ function setupAudioControl() {
     let playCount = 0;
     const listenButton = document.getElementById('listenButton');
     const audioElement = document.getElementById('audio_session2');
-    const statusText = document.querySelector('.text-gray-600.mb-0'); // Ensure this selector accurately targets your <p> tag
+    const statusText = document.querySelector('.playCount'); // Ensure this selector accurately targets your <p> tag
 
     // Update text on initial click and handle audio play
     listenButton.addEventListener('click', async () => {
         console.log('play', playCount);
         if (playCount < 5) {
            listenButton.style.visibility = 'hidden'; // Hide button when playing
-            statusText.textContent = `播放（第${playCount + 1}/2次）`;
+           statusText.innerHTML = `播放（第${playCount + 1}/2次） <img src="assets/img/waveform.gif" alt="Playing" style="vertical-align: middle;">`;
+
             if (playCount === 0) { // Fetch and play audio only on the first play
                 await fetchAndPlayAudio(audioElement, listenButton, statusText);
             } else {
@@ -64,6 +65,9 @@ function setupAudioControl() {
         } else {
             listenButton.style.visibility = 'hidden'; // Keep button hidden after all plays are done
             statusText.textContent = "播放结束";
+            document.dispatchEvent(new CustomEvent('loadNextSession', {
+                detail: { sessionNum: 3 }  // Move to next session
+            }));
         }
     });
 }
