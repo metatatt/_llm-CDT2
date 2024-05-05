@@ -3,9 +3,11 @@ const sessionId = 'session1'
 
 const htmlContent =
 `
+<!-- 
 <div class="text-center">
             <h2 class="mb-12 section-heading wow fadeInDown" data-wow-delay="0.3s">脑健康行动</h2>
 </div>
+-->
 
 <!-- 介绍CDT -->
 <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/3">
