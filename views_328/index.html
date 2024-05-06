@@ -27,11 +27,15 @@
         background: transparent; /* Sets the background to transparent */
         border: none; /* Removes any border */
         cursor: default; /* Sets the cursor to default to avoid pointer hand */
+        transition: transform 0.2s ease-in-out; /* Smooth transform effect for feedback */
+
       }
 
-      .loadNext:hover, .btn-primary:focus {
+      .loadNext:hover, .loadNext:focus {
         background: transparent; /* Keeps background transparent on hover/focus */
         outline: none; /* Removes focus outline */
+        transform: scale(1.05); /* Slightly enlarges the button to indicate activity */
+         opacity: 0.8; /* Changes opacity to give feedback */
       }
 
       .text-gray-600 {
@@ -43,6 +47,35 @@
       .inline-flex {
         align-items: center; /* Align items vertically */
       }
+
+      .image-preview-container {
+          position: relative;
+          display: inline-block; /* Ensures the container does not span the full width */
+      }
+
+      .image-preview-container .overlay-text {
+          position: absolute;
+          top: 50%;  /* Centers the text vertically */
+          left: 50%; /* Centers the text horizontally */
+          transform: translate(-50%, -50%); /* Ensures centering is accurate */
+          color: red; /* Change text color to red */
+          font-weight: bold; /* Bold text for better visibility */
+          background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+          padding: 8px; /* Padding around the text */
+          border-radius: 4px; /* Rounded corners for the overlay background */
+          display: none; /* Initially hidden */
+          animation: flash 1s infinite; /* Add flashing animation */
+      }
+
+      @keyframes flash {
+          0%, 100% {
+              opacity: 1;
+          }
+          50% {
+              opacity: 0;
+          }
+      }
+
 
   </style>
   

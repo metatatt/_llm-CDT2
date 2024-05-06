@@ -2,7 +2,8 @@ import { displaySession } from './assets/js/common.js';
 import { setupSession as setupSession1 } from './assets/js/session1.js';
 import { setupSession as setupSession2 } from './assets/js/session2.js';
 import { setupSession as setupSession3 } from './assets/js/session3.js';
-import { setupSession as setupSession4 } from './assets/js/session1.js';
+import { setupSession as setupSession4 } from './assets/js/session4.js';
+import { setupSession as setupSession5 } from './assets/js/session1.js';
 
 let currentSession = 1; // Track the current session state
 const totalSessions = 6;  // Assuming there are 6 sessions
